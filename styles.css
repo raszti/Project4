@@ -1,0 +1,119 @@
+body{
+  font-size: 100%;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header{
+  order: 1;
+  margin: 0px;
+  padding-bottom: 1em;
+  width: 100%;
+  min-height: 5em;
+  border-bottom: 0.2em solid #7d97ad;
+}
+
+#udalogo{
+  float: left;
+  height: 4em;
+  width: 4em;
+  margin: 0em;
+  padding: 0.5em;
+}
+
+h1,h2,h3,h4,p{
+  font-family: 'Work Sans', sans-serif;
+  margin: 0em;
+}
+
+h1,h4{
+  color: #2d3c49;
+  text-align: right;
+}
+
+h1{
+  width: 100%;
+  vertical-align: top;
+  font-size: 3em;
+  font-weight: 200;
+}
+
+h2{
+  order: 3;
+  width: 100%;
+  padding: 0.2em;
+  font-size: 2em;
+  color: #7d97ad;
+}
+
+h3{
+  text-align: center;
+  color: #2d3c49;
+  font-size: 2em;
+  padding: 0.2em;
+}
+
+h4{
+  vertical-align: bottom;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+p{
+  text-align: center;
+  font-size: 0.8em;
+  color: #2d3c49;
+  font-weight: 600;
+}
+
+img{
+  align-self: center;
+}
+
+#main-img{
+  order: 2;
+  max-width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.centered{
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.project{ width: 48%; }
+
+@media screen and (max-width: 27.5em) {
+  .project{ width: 100%; }
+}
+
+@media screen and (min-width: 40em) {
+  .project{ width: 30%; }
+}
+
+#project1{
+  order: 4;
+}
+
+#project2{
+  order: 5;
+}
+
+#project3{
+  order: 6;
+}
+
+.project-img{
+  max-width: 100%;
+  align-self: center;
+}
