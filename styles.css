@@ -3,6 +3,13 @@ body{
   margin: 0px;
   width: 100%;
   height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.centered{
+  max-width: 50em;
+  margin: 0 auto;
 }
 
 .flex-container{
@@ -57,8 +64,7 @@ h2{
 h3{
   text-align: center;
   color: #2d3c49;
-  font-size: 2em;
-  padding: 0.2em;
+  font-size: 1.6em;
 }
 
 h4{
@@ -69,9 +75,10 @@ h4{
 
 p{
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: #2d3c49;
   font-weight: 600;
+  margin-bottom: 1em;
 }
 
 img{
@@ -83,22 +90,6 @@ img{
   max-width: 100%;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-}
-
-.centered{
-  max-width: 50em;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-.project{ width: 48%; }
-
-@media screen and (max-width: 27.5em) {
-  .project{ width: 100%; }
-}
-
-@media screen and (min-width: 40em) {
-  .project{ width: 30%; }
 }
 
 #project1{
@@ -115,5 +106,17 @@ img{
 
 .project-img{
   max-width: 100%;
-  align-self: center;
+}
+
+.project{ width: 48%; }
+
+@media screen and (max-width: 27.5em) {
+  .project{ width: 100%; }
+  p,h3{ text-align: left; }
+  p{ font-size: 0.8em; }
+}
+
+@media screen and (min-width: 45em) {
+  .project{ width: 32%; }
+  p{ font-size: 0.7em; }
 }
